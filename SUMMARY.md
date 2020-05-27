@@ -11,7 +11,7 @@
 * [Machine learning](ml/ml.md)
 * [Ideas](ideas/ideas.md)
 
-## Testing sections 
-
+## Testing sections
 * [Intro again](README.md)
 * [Documentation again](documentation/documentation.md)
+
