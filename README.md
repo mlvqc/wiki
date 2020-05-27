@@ -45,10 +45,10 @@ Example of inline equation: $$ a x^2 + bx + c = 0 $$
 
 Example of math-block: 
 $$
-\int_{-\infty}^\infty g(x) dx
+\int_{-\infty}^\infty e^{-x^2} dx = \sqrt{\pi}
 $$
 
-### Local Editing 
+### Local Editing
 
 To preview the website quickly you can build and host it locally. On Linux this requires you to install `gitbook-cli` which can be accomplished using the commands
 
@@ -69,4 +69,4 @@ Finally, you can start hosting the website locally using the command
 gitbook serve ./wiki/
 ```
 
-With the website hosted locally saved changes should appear instantly.  
+With the website hosted locally saved changes cause the website to refresh and thus appear instantly.   
