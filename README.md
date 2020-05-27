@@ -35,8 +35,15 @@ To create a new section, do the same as you would do to add a new page, but when
 
 When you've created a new section page, also create a new directory in which files relating to that section can be stored. 
 
-Testing latex support: 
 
+
+### Equation Support
+
+The website supports inline or block `LaTeX` equations. The easiest way to add such equations is through a `MathJax` compatible markdown writer - Typora for example.
+
+Example of inline equation: $$ a x^2 + bx + c = 0 $$
+
+Example of math-block: 
 $$
 \int_{-\infty}^\infty g(x) dx
 $$
