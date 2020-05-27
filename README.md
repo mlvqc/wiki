@@ -18,10 +18,10 @@ Add the page to the necessary place in the github repository. Then, add it to th
 
 ```markdown
 * [section name](path/to/section.md)
-  *[page name](path/to/page.md)
+    *[page name](path/to/page.md)
 ```
 
-It is best if we keep the pages saved in a directory with the same name as the section. 
+The indentation between layers is four spaces. It is best if we keep the pages saved in a directory with the same name as the section. 
 
 ### How to create a new section 
 
