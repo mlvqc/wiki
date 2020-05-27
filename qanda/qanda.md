@@ -1,6 +1,6 @@
 # Questions and Answers
 
-[TOC]
+<!-- toc --> 
 
 I decree the format shall be: 
 
