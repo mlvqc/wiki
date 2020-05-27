@@ -1,4 +1,4 @@
 {
-    "plugins": ["katex", "prism", "image-captions", "copy-code", "github", "github-buttons", "atoc", "code-tabs"], 
+    "plugins": ["katex", "prism", "image-captions", "github", "atoc", "code-tabs"], 
     "description": "MLvQC wiki"
 }
