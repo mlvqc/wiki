@@ -2,6 +2,8 @@
 
 Welcome to the [wiki](https://mlvqc.github.io/wiki)!
 
+<!-- toc --> 
+
 ### How to edit a page
 
 To edit a page, just find it in the [github repository](https://github.com/mlvqc/wiki) and edit from there, or pull the repository and edit it on your PC. Then push to master:
@@ -18,10 +20,10 @@ Add the page to the necessary place in the github repository. Then, add it to th
 
 ```markdown
 * [section name](path/to/section.md)
-  *[page name](path/to/page.md)
+    * [page name](path/to/page.md)
 ```
 
-It is best if we keep the pages saved in a directory with the same name as the section. 
+The indentation between layers is four spaces. Also, make sure there is a space between the asterisk and the page name, or it won't work. It is best if we keep the pages saved in a directory with the same name as the section. 
 
 ### How to create a new section 
 
@@ -32,3 +34,9 @@ To create a new section, do the same as you would do to add a new page, but when
 ```
 
 When you've created a new section page, also create a new directory in which files relating to that section can be stored. 
+
+Testing latex support: 
+
+$$
+\int_{-\infty}^\infty g(x) dx
+$$
