@@ -29,8 +29,8 @@ To create a new section, do the same as you would do to add a new page, but when
 * [new section name](path/to/section.md)
 ```
 ### How to be like Seb
-1. 
-2.
-3.
+1. Be reliable
+2. don't be reliable 
+3. Be reliable
 
-... only $5 for each of his 3 secrets to success.
+... only 0.00000000001 btc for each of his 3 secrets to success.
