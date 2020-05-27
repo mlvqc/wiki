@@ -1,8 +1,21 @@
-## Questions and Answers
+# Questions and Answers
+
+[TOC]
 
 I decree the format shall be: 
 
-**Q:** Question...
+**Q:** Question... (askers name)
 
-**A**: Answer..
+**A**: Answer... (answers name)
 
+------
+
+## Unanswered
+
+------
+
+## Answered
+
+
+
+  
