@@ -4,7 +4,7 @@ Welcome to the [wiki](https://mlvqc.github.io/wiki)!
 
 ### How to edit a page
 
-To edit a page, just find it in the github repository and edit from there, or pull the repostiory and edit it on your PC. Then push to master:
+To edit a page, just find it in the [github repository](https://github.com/mlvqc/wiki) and edit from there, or pull the repository and edit it on your PC. Then push to master:
 
 ```markdown 
 git push -u origin master
