@@ -4,17 +4,15 @@
 
 I decree the format shall be: 
 
-**Q:** Question... (askers name)
+**Q:** Question... [askers name]
 
-**A**: Answer... (answers name)
+**A**: Answer... [answers name]
 
-------
+## Answered
 
 ## Unanswered
 
-------
-
-## Answered
+## 
 
 
 
