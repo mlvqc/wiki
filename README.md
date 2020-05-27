@@ -32,3 +32,9 @@ To create a new section, do the same as you would do to add a new page, but when
 ```
 
 When you've created a new section page, also create a new directory in which files relating to that section can be stored. 
+
+Testing latex support: 
+
+$$
+\int_{-\infty}^\infty g(x) dx
+$$
