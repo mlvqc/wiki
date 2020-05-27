@@ -12,8 +12,6 @@ I decree the format shall be:
 
 ## Unanswered
 
-## 
-
 
 
   
