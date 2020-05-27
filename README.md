@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the wiki!
+Welcome to the [wiki](https://mlvqc.github.io/wiki)!
 
 ### How to edit a page
 
