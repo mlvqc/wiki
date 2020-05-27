@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-      * [Help](templates/help.md)
+    * [Help](templates/help.md)
 * [Literature](literature/literature.md)
 * [Documentation](documentation/documentation.md)
 * [Drivers](drivers/drivers.md)
