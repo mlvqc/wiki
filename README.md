@@ -1,3 +1,5 @@
+<!-- toc --> 
+
 # Introduction
 
 Welcome to the [wiki](https://mlvqc.github.io/wiki)!
