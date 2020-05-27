@@ -10,3 +10,8 @@
 * [Q&A](qanda/qanda.md)
 * [Machine learning](ml/ml.md)
 * [Ideas](ideas/ideas.md)
+
+## Testing sections 
+
+* [Intro again](README.md)
+* [Documentation again](documentation/documentation.md)
