@@ -2,16 +2,13 @@
 
 <!-- toc --> 
 
-I decree the format shall be: 
+*I decree the format shall be:* 
 
-**Q:** Question... [askers name]
+### Question Title [`tag`]
 
-**A**: Answer... [answers name]
+**Q:** Question ... [askers name]
 
-## Answered
+**A**: Answer ... [answers name]
 
-## Unanswered
+  If the question is unanswered `tag = u`, if answered `tag = a `  
 
-
-
-  
