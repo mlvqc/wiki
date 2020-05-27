@@ -1,5 +1,5 @@
 {
-    "plugins": ["collapsible-menu", "katex", "image-captions", "github", "atoc"], 
+    "plugins": ["katex", "image-captions", "github", "atoc"], 
     "description": "MLvQC wiki", 
     "pluginsConfig": {
         "github": {
