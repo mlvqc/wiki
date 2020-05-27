@@ -1,4 +1,10 @@
 {
     "plugins": ["katex", "prism", "image-captions", "github", "atoc"], 
-    "description": "MLvQC wiki"
+    "description": "MLvQC wiki", 
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/mlvqc/wiki"
+        }
+    }
 }
+
