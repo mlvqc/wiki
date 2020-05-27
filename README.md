@@ -14,17 +14,21 @@ and the action script should push it to the pages website. Don't push to the gh-
 
 ### How to create a new page
 
-Add the page to the necessary place in the github repository. Then, add it to the [SUMMARY.md](SUMMARY.md) file as a member of a nested list in the correct section, and link the page name to the page itself using the following syntax: 
+Add the page to the necessary place in the github repository. Then, add it to the [SUMMARY.md](https://github.com/mlvqc/wiki/blob/master/SUMMARY.md) file as a member of a nested list in the correct section, and link the page name to the page itself using the following syntax: 
 
 ```markdown
 * [section name](path/to/section.md)
   *[page name](path/to/page.md)
 ```
 
+It is best if we keep the pages saved in a directory with the same name as the section. 
+
 ### How to create a new section 
 
-To create a new section, do the same as you would do to add a new page, but when adding it to the [SUMMARY.md](SUMMARY.md) file, put it as a top level element in the list: 
+To create a new section, do the same as you would do to add a new page, but when adding it to the [SUMMARY.md](https://github.com/mlvqc/wiki/blob/master/SUMMARY.md) file, put it as a top level element in the list: 
 
 ```markdown
 * [new section name](path/to/section.md)
 ```
+
+When you've created a new section page, also create a new directory in which files relating to that section can be stored. 
