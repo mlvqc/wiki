@@ -1,8 +1,8 @@
-<!-- toc --> 
-
 # Introduction
 
 Welcome to the [wiki](https://mlvqc.github.io/wiki)!
+
+<!-- toc --> 
 
 ### How to edit a page
 
