@@ -40,3 +40,26 @@ Testing latex support:
 $$
 \int_{-\infty}^\infty g(x) dx
 $$
+
+### Local Editing 
+
+To preview the website quickly you can build and host it locally. On Linux this requires you to install `gitbook-cli` which can be accomplished using the commands
+
+```bash
+sudo apt install npm;
+sudo npm install -g gitbook-cli; 
+```
+
+Assuming the wiki is in the folder `./wiki/` then you can the plugins listed in `./wiki/book.json`  using the command 
+
+```bash
+gitbook install ./wiki/
+```
+
+Finally, you can start hosting the website locally using the command 
+
+```bash
+gitbook serve ./wiki/
+```
+
+With the website hosted locally saved changes should appear instantly.  
