@@ -2,7 +2,7 @@
 
 <!-- toc -->
 
-### Bash Aliases, Commands and  FIGNORE
+### Bash Aliases, Functions and  FIGNORE
 
 Bash aliases make using the command line a more fluid experience by allowing you to execute a long command by typing a short alias. For example suppose that you are particularly lazy and  hate the having to `stage .`, `commit` and `push` changes across three commands then it is possible to define a single command to do all three at once, `git-lazy`. 
 
