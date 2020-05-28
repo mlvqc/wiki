@@ -1,0 +1,56 @@
+# Linux Documentation 
+
+<!-- toc -->
+
+### Bash Aliases and Commands
+
+Bash aliases make using the command line a more fluid experience by allowing you to execute a long command by typing a short alias. For example suppose that you are particularly lazy and  hate the having to `stage .`, `commit` and `push` changes across three commands then it is possible to define a single command to do all three at once, `git-lazy`. 
+
+To define aliases we should :
+
+1. Create an file at `~/bash_aliases.sh`. 
+
+2. Add the line below code  to `~/.bashrc`, so that the commands you define in `~/bash_aliases.sh` will be loaded when `~/.bashrc` is sourced. 
+
+```bash
+if [ -f ~/bash_aliases.sh ]; then
+    . ~/bash_aliases.sh
+fi
+
+```
+
+3. Define your aliases in `~/bash_aliases.sh` using the syntax 
+
+   ```bash
+   alias <alias>='<command>'
+   ```
+
+   where `<command>` is the command you wish to shorten and `<alias>` is the short-hand alias you wish to assign it to.  You can also define bash functions here.
+
+4. Finally, so that either you must source ``~/.bashrc``. This happens automatically everytime a terminal is opened. To avoid having to reopen the terminal you can source it manually with the command 
+
+   ```bash
+   source ~/.bashrc
+   ```
+
+As an example a alias to open `~/bash_aliases.sh` in our favourite text editor `gedit` then source `~/bash_aliases.sh` when we close `gedit` would be 
+
+```bash
+alias edit-aliases='
+gedit ~/.bash_aliases.sh; 
+printf "Sourcing ~/.bashrc \n";
+source ~/.bashrc
+'
+```
+
+The `git-lazy` command discussed above is better suited to a bash function owing the the necessity of a git commit message. 
+
+```bash
+function git-lazy() {
+    git stage .
+    git commit -a -m "$1"
+    git push
+}
+```
+
+Such a function uses the first argument as the commit message. For example `git-lazy 'commit message'` will stage all changes in the directory, commit them with the commit message `'commit message'`then push them to the relevant remote.  
