@@ -35,7 +35,7 @@ When you've created a new section page, also create a new directory in which fil
 
 
 
-### Equation Support
+### How to write equations
 
 The website supports inline or block `LaTeX` equations. The easiest way to add such equations is through a `MathJax` compatible markdown writer - Typora for example.
 
@@ -46,7 +46,7 @@ $$
 \int_{-\infty}^\infty e^{-x^2} dx = \sqrt{\pi}
 $$
 
-### Local Editing
+### How to edit and preview locally
 
 To preview the website quickly you can build and host it locally. On Linux this requires you to install `gitbook-cli` which can be accomplished using the commands
 
