@@ -11,7 +11,3 @@
 * [Q&A](qanda/qanda.md)
 * [Machine learning](ml/ml.md)
 * [Ideas](ideas/ideas.md)
-
-## Protected 
-
-* [Password entry](try.html)
