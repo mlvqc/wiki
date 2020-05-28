@@ -1,8 +1,13 @@
-# Notes on papers
+# Papers
 
- <!-- toc -->
+This section is for storing notes on papers. Add your notes to the correct subsection, or create a new one if none of the existing subsections fit the paper's subject. 
 
-## [CMOS architecture for a spin-based quantum computer - M. Veldhorst](https://www.nature.com/articles/s41467-017-01905-6.pdf)
+### Format
 
-A paper discussing the how a CMOS architecture for spin $$1/2$$ qubits might be scaled. 
+```markdown 
+### [Paper title](link to paper)
 
+Notes on paper
+
+---
+```
