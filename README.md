@@ -51,8 +51,8 @@ $$
 To preview the website quickly you can build and host it locally. On Linux this requires you to install `gitbook-cli` which can be accomplished using the commands
 
 ```bash
-sudo apt install npm;
-sudo npm install -g gitbook-cli; 
+sudo apt install npm
+sudo npm install -g gitbook-cli 
 ```
 
 Assuming the wiki is in the folder `./wiki/` then you can the plugins listed in `./wiki/book.json`  using the command 
