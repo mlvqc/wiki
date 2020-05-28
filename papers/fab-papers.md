@@ -23,4 +23,18 @@ They estimate that if the feature size, ie the minimal width between gates and u
 There are two popular readout schemes: 
 
 1. Readout based on the Zeeman energy (using a reservoir) 
-2. Readout based on singlet-triplet energy using Pauli spin blockade. 
+2. Readout based on singlet-triplet energy using Pauli spin blockade.  They estimate that the Pauli spin blockade energy is about 1meV. 
+
+They favour the spin blockade technique because 
+
+- the larger energy scale leads to a better fidelity 
+- it not necessitating for each qubit to be attached to a reservoir
+- it does no require a large magnetic field.  
+
+The readout they propose requires a reference dot, which sits in the ground state. They then try to force the dots together and determine the spin dependant charge state using gate based dispersive readout. Thus only half the qubits would be available to be read out.  They suggest extensive multiplexing, but I do not know how feasible it will be. 
+
+##### Heat Dissipation
+
+Of critical importance to large scale quantum computing is heat dissipation/cooling power. They estimate the heat produced by the control electronics and how much heat a cryostat could remove and conclude an operating temperature of $$100$$mK. 
+
+[Barnaby]

@@ -427,6 +427,7 @@
 <li><a href="#cmos-architecture-for-a-spin-based-quantum-computer---veldhorsthttpswwwnaturecomarticless41467-017-01905-6pdf"><a href="https://www.nature.com/articles/s41467-017-01905-6.pdf" target="_blank">CMOS architecture for a spin-based quantum computer - Veldhorst</a></a><ul>
 <li><a href="#physical-architecture">Physical Architecture</a></li>
 <li><a href="#readout">Readout</a></li>
+<li><a href="#heat-dissipation">Heat Dissipation</a></li>
 </ul>
 </li>
 </ul>
@@ -443,8 +444,18 @@
 <p>There are two popular readout schemes: </p>
 <ol>
 <li>Readout based on the Zeeman energy (using a reservoir) </li>
-<li>Readout based on singlet-triplet energy using Pauli spin blockade.</li>
+<li>Readout based on singlet-triplet energy using Pauli spin blockade.  They estimate that the Pauli spin blockade energy is about 1meV. </li>
 </ol>
+<p>They favour the spin blockade technique because </p>
+<ul>
+<li>the larger energy scale leads to a better fidelity </li>
+<li>it not necessitating for each qubit to be attached to a reservoir</li>
+<li>it does no require a large magnetic field.  </li>
+</ul>
+<p>The readout they propose requires a reference dot, which sits in the ground state. They then try to force the dots together and determine the spin dependant charge state using gate based dispersive readout. Thus only half the qubits would be available to be read out.  They suggest extensive multiplexing, but I do not know how feasible it will be. </p>
+<h5 id="heat-dissipation">Heat Dissipation</h5>
+<p>Of critical importance to large scale quantum computing is heat dissipation/cooling power. They estimate the heat produced by the control electronics and how much heat a cryostat could remove and conclude an operating temperature of <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mn>0</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mord mathrm">0</span><span class="mord mathrm">0</span></span></span></span>mK. </p>
+<p>[Barnaby]</p>
 <script type="text/javascript">var className='atoc';</script>
                                 
                                 </section>
@@ -488,7 +499,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Fab/architecture","level":"1.9.4","depth":2,"next":{"title":"Ideas","level":"1.10","depth":1,"path":"ideas/ideas.md","ref":"ideas/ideas.md","articles":[]},"previous":{"title":"Quantum dots","level":"1.9.3","depth":2,"path":"papers/dot-papers.md","ref":"papers/dot-papers.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","image-captions","github","atoc","hints"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"atoc":{"addClass":true,"className":"atoc"},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"papers/fab-papers.md","mtime":"2020-05-28T12:55:29.072Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T12:56:21.319Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Fab/architecture","level":"1.9.4","depth":2,"next":{"title":"Ideas","level":"1.10","depth":1,"path":"ideas/ideas.md","ref":"ideas/ideas.md","articles":[]},"previous":{"title":"Quantum dots","level":"1.9.3","depth":2,"path":"papers/dot-papers.md","ref":"papers/dot-papers.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","image-captions","github","atoc","hints"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"atoc":{"addClass":true,"className":"atoc"},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"papers/fab-papers.md","mtime":"2020-05-28T13:14:19.694Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T13:15:14.704Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
