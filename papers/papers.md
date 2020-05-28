@@ -4,6 +4,7 @@ This section is for storing notes on papers. Add your notes to the correct subse
 
 ### Format
 
+
 ```markdown 
 ### [Paper title](link to paper)
 
