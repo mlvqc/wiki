@@ -2,7 +2,7 @@
 
  <!-- toc -->
 
-### [CMOS architecture for a spin-based quantum computer - M. Veldhorst](https://www.nature.com/articles/s41467-017-01905-6.pdf)
+### [CMOS architecture for a spin-based quantum computer - Veldhorst](https://www.nature.com/articles/s41467-017-01905-6.pdf)
 
 A paper discussing the how a CMOS architecture for spin-$$1/2$$ qubits might be scaled.  Single qubit gates are implemented using microwave cavity, two qubit gates via exchange interactions and read out by gate based dispersive readout. They suggest how transistor based control circuit with charge storage electrodes could be used to operate a dense and scalable two dimensional qubit system. 
 
@@ -18,3 +18,9 @@ The general architecture proposed uses a layered Silicon wafer, where the lowest
 
 They estimate that if the feature size, ie the minimal width between gates and undoped regions is $$\lambda$$ then the classical control structure will occupy an area $$80 \lambda^{2}$$ above the qubit. A features size of $$\lambda = 7 $$nm, consistent with current AMD consumer processors, leads to a qubit size of $$63 \times 63$$nm. 
 
+##### Readout
+
+There are two popular readout schemes: 
+
+1. Readout based on the Zeeman energy (using a reservoir) 
+2. Readout based on singlet-triplet energy using Pauli spin blockade. 
