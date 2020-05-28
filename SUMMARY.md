@@ -1,16 +1,18 @@
 # Summary
 
 * [Introduction](README.md)
-  
     * [Help](templates/help.md)
 * [Literature](literature/literature.md)
 * [Documentation](documentation/documentation.md)
 * [Drivers](drivers/drivers.md)
-  
     * [Zurich](drivers/zurich.md)
 * [Readout](readout/readout.md)
 * [Intuitions](intuitions/intuitions.md)
 * [Q&A](qanda/qanda.md)
 * [Machine learning](ml/ml.md)
 * [Papers](papers/papers.md)
+    * [Reflectometry](papers/rf-papers.md)
+    * [Qubits](papers/qubit-papers.md)
+    * [Quantum dots](papers/dot-papers.md)
+    * [Fab/architecture](papers/fab-papers.md)
 * [Ideas](ideas/ideas.md)
