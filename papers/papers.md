@@ -10,5 +10,5 @@ This section is for storing notes on papers. Add your notes to the correct subse
 
 Notes on paper
 
----
+[Writer's Name]
 ```
