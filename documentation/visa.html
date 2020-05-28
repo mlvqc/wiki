@@ -1,0 +1,561 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Setting up VISA on Ubuntu · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-atoc/atoc.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-hints/plugin-hints.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../drivers/drivers.html" />
+    
+    
+    <link rel="prev" href="git.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../templates/help.html">
+            
+                <a href="../templates/help.html">
+            
+                    
+                    Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../literature/literature.html">
+            
+                <a href="../literature/literature.html">
+            
+                    
+                    Literature
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="documentation.html">
+            
+                <a href="documentation.html">
+            
+                    
+                    Documentation
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="git.html">
+            
+                <a href="git.html">
+            
+                    
+                    Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.2" data-path="visa.html">
+            
+                <a href="visa.html">
+            
+                    
+                    Setting up VISA on Ubuntu
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../drivers/drivers.html">
+            
+                <a href="../drivers/drivers.html">
+            
+                    
+                    Drivers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../drivers/zurich.html">
+            
+                <a href="../drivers/zurich.html">
+            
+                    
+                    Zurich
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../readout/readout.html">
+            
+                <a href="../readout/readout.html">
+            
+                    
+                    Readout
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../intuitions/intuitions.html">
+            
+                <a href="../intuitions/intuitions.html">
+            
+                    
+                    Intuitions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../qanda/qanda.html">
+            
+                <a href="../qanda/qanda.html">
+            
+                    
+                    Q&A
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../ml/ml.html">
+            
+                <a href="../ml/ml.html">
+            
+                    
+                    Machine learning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../papers/papers.html">
+            
+                <a href="../papers/papers.html">
+            
+                    
+                    Papers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" data-path="../papers/rf-papers.html">
+            
+                <a href="../papers/rf-papers.html">
+            
+                    
+                    Reflectometry
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="../papers/qubit-papers.html">
+            
+                <a href="../papers/qubit-papers.html">
+            
+                    
+                    Qubits
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="../papers/dot-papers.html">
+            
+                <a href="../papers/dot-papers.html">
+            
+                    
+                    Quantum dots
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="../papers/fab-papers.html">
+            
+                <a href="../papers/fab-papers.html">
+            
+                    
+                    Fab/architecture
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../ideas/ideas.html">
+            
+                <a href="../ideas/ideas.html">
+            
+                    
+                    Ideas
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Setting up VISA on Ubuntu</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="setting-up-visa-on-kubuntu">Setting up VISA on (k)Ubuntu</h1>
+<p>National Instruments don&apos;t like Ubuntu. While there are packages for other Linux distros (e.g. CentOS), there are none for our friend Ubuntu. To connect to devices over USB/GPIB from an Ubuntu system, you will have to go through the following steps. </p>
+<ol>
+<li><p>Install pyvisa-py: 
+ <code>$ pip3 install pyvisa-py</code></p>
+</li>
+<li><p>Install pyusb (to allow for control over USB): 
+ <code>$ pip3 install pyusb</code></p>
+</li>
+<li><p>Check the output of python3 -m visa info and see if it is as follows. If not, you&apos;re already going wrong. (Check online for help!)</p>
+<pre><code>Machine Details:
+   Platform ID:    Linux-5.3.0-26-generic-x86_64-with-debian-buster-sid
+   Processor:      x86_64
+
+Python:
+   Implementation: CPython
+   Executable:     /home/joseph/anaconda3/bin/python3
+   Version:        3.7.6
+   Compiler:       GCC 7.3.0
+   Bits:           64bit
+   Build:          Jan  8 2020 19:59:22 (#default)
+   Unicode:        UCS4
+
+PyVISA Version: 1.10.1
+
+Backends:
+   ni:
+      Version: 1.10.1 (bundled with PyVISA)
+      Binary library: Not found
+   py:
+      Version: 0.3.1
+      ASRL INSTR:
+         Please install PySerial (&gt;=3.0) to use this resource type.
+         No module named &apos;serial&apos;
+      USB INSTR: Available via PyUSB (1.0.2). Backend: libusb1
+      USB RAW: Available via PyUSB (1.0.2). Backend: libusb1
+      TCPIP INSTR: Available 
+      TCPIP SOCKET: Available 
+      GPIB INSTR:
+         Please install linux-gpib to use this resource type.
+         No module named &apos;gpib&apos;
+</code></pre></li>
+<li><p>Follow the steps from <a href="https://stackoverflow.com/questions/52256123/unable-to-get-full-visa-address-that-includes-the-serial-number" target="_blank">this stackexchange answer</a> . </p>
+<ol>
+<li><p><code>$ sudo groupadd usbusers</code></p>
+</li>
+<li><p><code>$ sudo usermod -a -G usbusers &lt;USERNAME&gt;</code></p>
+</li>
+<li><p>Reboot</p>
+</li>
+<li><p><code>$ sudo cp  /etc/udev/rules.d/99-com.rules  /etc/udev/rules.d/99-com.rules.BAK</code> (to backup file if it exists)</p>
+</li>
+<li><p><code>$ sudo nano  /etc/udev/rules.d/99-com.rules</code></p>
+</li>
+<li><p>Add the following:  <code>SUBSYSTEM==&quot;usb&quot;, MODE=&quot;0666&quot;, GROUP=&quot;usbusers&quot;</code></p>
+</li>
+<li><p><code>$ /etc/init.d/udev  restart</code></p>
+</li>
+</ol>
+</li>
+<li><p>You might need to run <code>$ sudo rmmod usbtmc</code>. When the instrument is plugged in, the usbtmc driver grabs it (from my understanding). You have to remove this driver from the instrument before it can be seen by pyvisa.</p>
+</li>
+</ol>
+<script type="text/javascript">var className='atoc';</script>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="git.html" class="navigation navigation-prev " aria-label="Previous page: Git">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../drivers/drivers.html" class="navigation navigation-next " aria-label="Next page: Drivers">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Setting up VISA on Ubuntu","level":"1.3.2","depth":2,"next":{"title":"Drivers","level":"1.4","depth":1,"path":"drivers/drivers.md","ref":"drivers/drivers.md","articles":[{"title":"Zurich","level":"1.4.1","depth":2,"path":"drivers/zurich.md","ref":"drivers/zurich.md","articles":[]}]},"previous":{"title":"Git","level":"1.3.1","depth":2,"path":"documentation/git.md","ref":"documentation/git.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","image-captions","github","atoc","hints"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"atoc":{"addClass":true,"className":"atoc"},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"documentation/visa.md","mtime":"2020-05-28T12:30:47.569Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T12:31:47.566Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-atoc/atoc.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

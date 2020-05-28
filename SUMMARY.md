@@ -5,6 +5,7 @@
 * [Literature](literature/literature.md)
 * [Documentation](documentation/documentation.md)
     * [Git](documentation/git.md)
+    * [Setting up VISA on Ubuntu](documentation/visa.md)
 * [Drivers](drivers/drivers.md)
     * [Zurich](drivers/zurich.md)
 * [Readout](readout/readout.md)
