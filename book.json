@@ -1,5 +1,5 @@
 {
-    "plugins": ["katex", "image-captions", "github", "atoc"], 
+    "plugins": ["katex", "image-captions", "github", "atoc", "hints"], 
     "description": "MLvQC wiki", 
     "pluginsConfig": {
         "github": {
