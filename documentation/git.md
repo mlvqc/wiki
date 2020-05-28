@@ -58,3 +58,4 @@ If you want to contribute to an open source project, the best  one to pick is on
 
 Source: [Rob Allen](https://akrabat.com/the-beginners-guide-to-contributing-to-a-github-project/) & Brandon Severin
 
+[Brandon]

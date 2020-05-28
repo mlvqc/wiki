@@ -10,3 +10,5 @@
 5. Saftey check: plug the wire into a pin that is not connected to a device. When it is ungrounded, we should see a current. When we then remove the short and try again, we should see no current. 
 6. Plug the Keithley into the source. The drain should be on ground. Float the source and we should measure a current. This is the current through the device. 
 7. We can then check gates for leakage. Float them all and one by one ground them to see if there is current from high voltage (source) to ground (the grounded gate). 
+
+[Joseph]

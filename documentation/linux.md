@@ -61,3 +61,4 @@ The final thing you can do in `~/bash_aliases.sh` is set file paths to be ignore
 FIGNORE=".log:.bbl:.aux:.blg:.toc:.out"
 ```
 
+[Barnaby]
