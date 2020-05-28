@@ -426,26 +426,29 @@
 <h3 id="code-blocks">Code blocks</h3>
 <p>You can add code blocks in the following way: </p>
 <pre><code class="lang-markdown">
-<span class="hljs-code">```</span>language
+&#x200B;<span class="hljs-code">```</span>language
 code goes here
 <span class="hljs-code">```</span>
 </code></pre>
 <p>where language is the name of the programming language that you are putting in the block. There is support for a lot of languages. 
 Python (python) and C++ (cpp) are two that we might use often. </p>
 <p>This will be formatted like: </p>
-<pre><code class="lang-python"><span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">sum</span><span class="hljs-params">(a, b)</span>:</span> 
-    <span class="hljs-keyword">return</span> a + b
-</code></pre>
-<h3 id="table-of-contents">Table of contents</h3>
-<p>You can add a table of contents to a page by including the following in the markdown file: </p>
-<pre><code class="lang-markdown">
-<span class="xml"><span class="hljs-comment">&lt;!-- toc --&gt;</span></span>
+<p>&#x200B;```python
+def sum(a, b): 
+    return a + b</p>
+<pre><code>
+### Table of contents 
 
+You can add a table of contents to a page by including the following in the markdown file: 
 
+```markdown
 
-<span class="xml"><span class="hljs-comment">&lt;!-- tocstop --&gt;</span></span>
-</code></pre>
-<p>The table of contents is then rendered in that position. You do not need the tocstop part, only gitbooks renders that (unsure why). </p>
+&lt;!-- toc --&gt;
+
+* [Including Images](#including-images)
+
+&lt;!-- tocstop --&gt;
+</code></pre><p>The table of contents is then rendered in that position. You do not need the tocstop part, only gitbooks renders that (unsure why). </p>
 <h3 id="hint-blocks">Hint blocks</h3>
 <p>You can add hint blocks: </p>
 <pre><code class="lang-markdown">{% hint style=&apos;info&apos; %}
@@ -461,6 +464,11 @@ Important info: this note needs to be highlighted
 </div></div></p>
 <p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>This is a warning block.</p>
 </div></div></p>
+<h3 id="including-images">Including Images</h3>
+<p>Images can be added and centred by using the syntax</p>
+<pre><code class="lang-markdown"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">center</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;IMAGE_RELATIVE_PATH&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;zoom:100%;&quot;</span> /&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">center</span>&gt;</span></span>
+</code></pre>
+<p>It is important to use a relative path, as an absolute path would be broken when the image is pushed to github.</p>
 <script type="text/javascript">var className='atoc';</script>
                                 
                                 </section>
@@ -504,7 +512,7 @@ Important info: this note needs to be highlighted
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Help","level":"1.1.1","depth":2,"next":{"title":"Literature","level":"1.2","depth":1,"path":"literature/literature.md","ref":"literature/literature.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Help","level":"1.1.1","depth":2,"path":"templates/help.md","ref":"templates/help.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","image-captions","github","atoc","hints"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"atoc":{"addClass":true,"className":"atoc"},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"templates/help.md","mtime":"2020-05-28T13:14:19.698Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T13:15:14.704Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Help","level":"1.1.1","depth":2,"next":{"title":"Literature","level":"1.2","depth":1,"path":"literature/literature.md","ref":"literature/literature.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Help","level":"1.1.1","depth":2,"path":"templates/help.md","ref":"templates/help.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","image-captions","github","atoc","hints"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"atoc":{"addClass":true,"className":"atoc"},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"templates/help.md","mtime":"2020-05-28T15:03:14.009Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T15:04:14.892Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

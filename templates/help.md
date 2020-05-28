@@ -8,7 +8,7 @@ You can add code blocks in the following way:
 
 ````markdown 
 
-```language
+​```language
 code goes here
 ```
 
@@ -19,7 +19,7 @@ Python (python) and C++ (cpp) are two that we might use often.
 
 This will be formatted like: 
 
-```python
+​```python
 def sum(a, b): 
     return a + b
 
@@ -65,9 +65,15 @@ This is a danger block.
 This is a warning block.
 {% endhint %}
 
+### Including Images
 
+Images can be added and centred by using the syntax
 
+```markdown
+<center><img src="IMAGE_RELATIVE_PATH" style="zoom:100%;" /></center>
+```
 
+It is important to use a relative path, as an absolute path would be broken when the image is pushed to github.  
 
 
 
