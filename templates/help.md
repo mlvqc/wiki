@@ -17,6 +17,14 @@ code goes here
 where language is the name of the programming language that you are putting in the block. There is support for a lot of languages. 
 Python (python) and C++ (cpp) are two that we might use often. 
 
+This will be formatted like: 
+
+```python
+def sum(a, b): 
+    return a + b
+
+```
+
 ### Table of contents 
 
 You can add a table of contents to a page by including the following in the markdown file: 
@@ -25,4 +33,43 @@ You can add a table of contents to a page by including the following in the mark
 <!-- toc --> 
 ```
 
-The table of contents is then rendered in that position. 
+The table of contents is then rendered in that position. You do not need the tocstop part, only gitbooks renders that (unsure why). 
+
+
+### Hint blocks 
+
+You can add hint blocks: 
+
+```markdown 
+{% hint style='info' %}
+Important info: this note needs to be highlighted
+{% endhint %}
+```
+
+There are four styles: info (default), tip, danger, and warning. Examples are below. 
+
+
+{% hint style='info' %}
+This is an info block.
+{% endhint %}
+
+{% hint style='tip' %}
+This is a tip block.
+{% endhint %}
+
+{% hint style='danger' %}
+This is a danger block. 
+{% endhint %}
+
+{% hint style='warning' %}
+This is a warning block.
+{% endhint %}
+
+
+
+
+
+
+
+
+
