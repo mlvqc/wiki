@@ -9,3 +9,7 @@ A paper discussing the how a CMOS architecture for spin-$$1/2$$ qubits might be 
 In classical computing Silicon based CMOS integrated circuits (ICs) have scaled to billions of transistors. A key architectural aspect of IC is the parallel addressing through word line and bit line, facilitating  rapid read and write operations on large 2D arrays of bits. Unfortunately, this cannot be applied directly to qubit arrays. As the tolerance levels are small so each qubit must be individually tunable. 
 
 This paper develops an architecture which allows for parallel addressing of silicon spin qubits, while solving the tunability issue through 'floating memory gate electrodes' that can be routinely reset, similar to dynamic random access memory. Their architecture requires $$\mathcal{O}(\sqrt{N})$$ lines for $$N $$ qubits. 
+
+##### Physical Architecture 
+
+The general architecture proposed 
