@@ -13,4 +13,8 @@
 * [Q&A](qanda/qanda.md)
 * [Machine learning](ml/ml.md)
 * [Papers](papers/papers.md)
+    * [Reflectometry](papers/rf-papers.md)
+    * [Qubits](papers/qubit-papers.md)
+    * [Quantum dots](papers/dot-papers.md)
+    * [Fab/architecture](papers/fab-papers.md)
 * [Ideas](ideas/ideas.md)
