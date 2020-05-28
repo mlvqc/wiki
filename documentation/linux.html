@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Reflectometry · GitBook</title>
+        <title>Linux · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,10 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="qubit-papers.html" />
+    <link rel="next" href="../drivers/drivers.html" />
     
     
-    <link rel="prev" href="papers.html" />
+    <link rel="prev" href="sample-test.html" />
     
 
     </head>
@@ -150,9 +150,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../documentation/documentation.html">
+        <li class="chapter " data-level="1.3" data-path="documentation.html">
             
-                <a href="../documentation/documentation.html">
+                <a href="documentation.html">
             
                     
                     Documentation
@@ -164,9 +164,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../documentation/git.html">
+        <li class="chapter " data-level="1.3.1" data-path="git.html">
             
-                <a href="../documentation/git.html">
+                <a href="git.html">
             
                     
                     Git
@@ -177,9 +177,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../documentation/visa.html">
+        <li class="chapter " data-level="1.3.2" data-path="visa.html">
             
-                <a href="../documentation/visa.html">
+                <a href="visa.html">
             
                     
                     Setting up VISA on Ubuntu
@@ -190,9 +190,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../documentation/sample-test.html">
+        <li class="chapter " data-level="1.3.3" data-path="sample-test.html">
             
-                <a href="../documentation/sample-test.html">
+                <a href="sample-test.html">
             
                     
                     Room temperature sample test
@@ -203,9 +203,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../documentation/linux.html">
+        <li class="chapter active" data-level="1.3.4" data-path="linux.html">
             
-                <a href="../documentation/linux.html">
+                <a href="linux.html">
             
                     
                     Linux
@@ -305,9 +305,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="papers.html">
+        <li class="chapter " data-level="1.9" data-path="../papers/papers.html">
             
-                <a href="papers.html">
+                <a href="../papers/papers.html">
             
                     
                     Papers
@@ -319,9 +319,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.9.1" data-path="rf-papers.html">
+        <li class="chapter " data-level="1.9.1" data-path="../papers/rf-papers.html">
             
-                <a href="rf-papers.html">
+                <a href="../papers/rf-papers.html">
             
                     
                     Reflectometry
@@ -332,9 +332,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.2" data-path="qubit-papers.html">
+        <li class="chapter " data-level="1.9.2" data-path="../papers/qubit-papers.html">
             
-                <a href="qubit-papers.html">
+                <a href="../papers/qubit-papers.html">
             
                     
                     Qubits
@@ -345,9 +345,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.3" data-path="dot-papers.html">
+        <li class="chapter " data-level="1.9.3" data-path="../papers/dot-papers.html">
             
-                <a href="dot-papers.html">
+                <a href="../papers/dot-papers.html">
             
                     
                     Quantum dots
@@ -358,9 +358,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9.4" data-path="fab-papers.html">
+        <li class="chapter " data-level="1.9.4" data-path="../papers/fab-papers.html">
             
-                <a href="fab-papers.html">
+                <a href="../papers/fab-papers.html">
             
                     
                     Fab/architecture
@@ -419,7 +419,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Reflectometry</a>
+        <a href=".." >Linux</a>
     </h1>
 </div>
 
@@ -434,7 +434,52 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <script type="text/javascript">var className='atoc';</script>
+                                <h1 id="linux-documentation">Linux Documentation</h1>
+<!-- toc -->
+<ul>
+<li><a href="#bash-aliases-and-commands">Bash Aliases and Commands</a></li>
+</ul>
+<!-- tocstop -->
+<h3 id="bash-aliases-and-commands">Bash Aliases and Commands</h3>
+<p>Bash aliases make using the command line a more fluid experience by allowing you to execute a long command by typing a short alias. For example suppose that you are particularly lazy and  hate the having to <code>stage .</code>, <code>commit</code> and <code>push</code> changes across three commands then it is possible to define a single command to do all three at once, <code>git-lazy</code>. </p>
+<p>To define aliases we should :</p>
+<ol>
+<li><p>Create an file at <code>~/bash_aliases.sh</code>. </p>
+</li>
+<li><p>Add the line below code  to <code>~/.bashrc</code>, so that the commands you define in <code>~/bash_aliases.sh</code> will be loaded when <code>~/.bashrc</code> is sourced. </p>
+</li>
+</ol>
+<pre><code class="lang-bash"><span class="hljs-keyword">if</span> [ <span class="hljs-_">-f</span> ~/bash_aliases.sh ]; <span class="hljs-keyword">then</span>
+    . ~/bash_aliases.sh
+<span class="hljs-keyword">fi</span>
+</code></pre>
+<ol>
+<li><p>Define your aliases in <code>~/bash_aliases.sh</code> using the syntax </p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> &lt;<span class="hljs-built_in">alias</span>&gt;=<span class="hljs-string">&apos;&lt;command&gt;&apos;</span>
+</code></pre>
+<p>where <code>&lt;command&gt;</code> is the command you wish to shorten and <code>&lt;alias&gt;</code> is the short-hand alias you wish to assign it to.  You can also define bash functions here.</p>
+</li>
+<li><p>Finally, so that either you must source <code>~/.bashrc</code>. This happens automatically everytime a terminal is opened. To avoid having to reopen the terminal you can source it manually with the command </p>
+<pre><code class="lang-bash"><span class="hljs-built_in">source</span> ~/.bashrc
+</code></pre>
+</li>
+</ol>
+<p>As an example a alias to open <code>~/bash_aliases.sh</code> in our favourite text editor <code>gedit</code> then source <code>~/bash_aliases.sh</code> when we close <code>gedit</code> would be </p>
+<pre><code class="lang-bash"><span class="hljs-built_in">alias</span> edit-aliases=<span class="hljs-string">&apos;
+gedit ~/.bash_aliases.sh; 
+printf &quot;Sourcing ~/.bashrc \n&quot;;
+source ~/.bashrc
+&apos;</span>
+</code></pre>
+<p>The <code>git-lazy</code> command discussed above is better suited to a bash function owing the the necessity of a git commit message. </p>
+<pre><code class="lang-bash"><span class="hljs-keyword">function</span> git-<span class="hljs-function"><span class="hljs-title">lazy</span></span>() {
+    git stage .
+    git commit <span class="hljs-_">-a</span> -m <span class="hljs-string">&quot;<span class="hljs-variable">$1</span>&quot;</span>
+    git push
+}
+</code></pre>
+<p>Such a function uses the first argument as the commit message. For example <code>git-lazy &apos;commit message&apos;</code> will stage all changes in the directory, commit them with the commit message <code>&apos;commit message&apos;</code>then push them to the relevant remote.</p>
+<script type="text/javascript">var className='atoc';</script>
                                 
                                 </section>
                             
@@ -461,12 +506,12 @@
 
             
                 
-                <a href="papers.html" class="navigation navigation-prev " aria-label="Previous page: Papers">
+                <a href="sample-test.html" class="navigation navigation-prev " aria-label="Previous page: Room temperature sample test">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="qubit-papers.html" class="navigation navigation-next " aria-label="Next page: Qubits">
+                <a href="../drivers/drivers.html" class="navigation navigation-next " aria-label="Next page: Drivers">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -477,7 +522,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Reflectometry","level":"1.9.1","depth":2,"next":{"title":"Qubits","level":"1.9.2","depth":2,"path":"papers/qubit-papers.md","ref":"papers/qubit-papers.md","articles":[]},"previous":{"title":"Papers","level":"1.9","depth":1,"path":"papers/papers.md","ref":"papers/papers.md","articles":[{"title":"Reflectometry","level":"1.9.1","depth":2,"path":"papers/rf-papers.md","ref":"papers/rf-papers.md","articles":[]},{"title":"Qubits","level":"1.9.2","depth":2,"path":"papers/qubit-papers.md","ref":"papers/qubit-papers.md","articles":[]},{"title":"Quantum dots","level":"1.9.3","depth":2,"path":"papers/dot-papers.md","ref":"papers/dot-papers.md","articles":[]},{"title":"Fab/architecture","level":"1.9.4","depth":2,"path":"papers/fab-papers.md","ref":"papers/fab-papers.md","articles":[]}]},"dir":"neutral"},"config":{"plugins":["katex","image-captions","github","atoc","hints"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"atoc":{"addClass":true,"className":"atoc"},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"papers/rf-papers.md","mtime":"2020-05-28T21:08:56.555Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T21:09:55.345Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Linux","level":"1.3.4","depth":2,"next":{"title":"Drivers","level":"1.4","depth":1,"path":"drivers/drivers.md","ref":"drivers/drivers.md","articles":[{"title":"Zurich","level":"1.4.1","depth":2,"path":"drivers/zurich.md","ref":"drivers/zurich.md","articles":[]}]},"previous":{"title":"Room temperature sample test","level":"1.3.3","depth":2,"path":"documentation/sample-test.md","ref":"documentation/sample-test.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","image-captions","github","atoc","hints"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"atoc":{"addClass":true,"className":"atoc"},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"documentation/linux.md","mtime":"2020-05-28T21:08:56.555Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T21:09:55.345Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
