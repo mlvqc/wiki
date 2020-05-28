@@ -9,3 +9,5 @@ A paper about a Silicon qubit made with an industry standard fabrication process
 <center><img src="./images/CMOS.png" style="zoom:120%;" /></center>
 
 At low temperatures the first gate defines the quantum dot encoding the hole spin $$1/2$$  qubit. The second dot is used for readout.  All electrical control is demonstrated using phase tunable microwaves applied to the first gate. The microwaves were able to couple to the spin using electric-dipole spin resonance (EDSR). And readout using charge conversion via Pauli spin blockage.  
+
+[Barnaby]

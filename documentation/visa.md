@@ -42,7 +42,7 @@ National Instruments don't like Ubuntu. While there are packages for other Linux
          GPIB INSTR:
             Please install linux-gpib to use this resource type.
             No module named 'gpib'
-    ```    
+   ```
 
 4. Follow the steps from [this stackexchange answer](https://stackoverflow.com/questions/52256123/unable-to-get-full-visa-address-that-includes-the-serial-number) . 
 
@@ -61,3 +61,5 @@ National Instruments don't like Ubuntu. While there are packages for other Linux
    7. `$ /etc/init.d/udev  restart`
 
 5. You might need to run `$ sudo rmmod usbtmc`. When the instrument is plugged in, the usbtmc driver grabs it (from my understanding). You have to remove this driver from the instrument before it can be seen by pyvisa.
+
+[Joseph]
