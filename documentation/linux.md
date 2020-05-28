@@ -27,7 +27,7 @@ fi
 
    where `<command>` is the command you wish to shorten and `<alias>` is the short-hand alias you wish to assign it to.  You can also define bash functions here.
 
-4. Finally, so that either you must source ``~/.bashrc``. This happens automatically everytime a terminal is opened. To avoid having to reopen the terminal you can source it manually with the command 
+4. Finally, so that either you must source ``~/.bashrc``. This happens automatically every time a terminal is opened, but to avoid having to reopen the terminal you can source it manually with the command 
 
    ```bash
    source ~/.bashrc
