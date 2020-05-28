@@ -1,7 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-    * [Help](templates/help.md)
+    * [Website Help](help/website.md)
+    * [Markdown Help](help/markdown.md)
 * [Literature](literature/literature.md)
 * [Documentation](documentation/documentation.md)
     * [Git](documentation/git.md)

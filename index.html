@@ -73,7 +73,7 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="templates/help.html" />
+    <link rel="next" href="help/website.html" />
     
     
 
@@ -117,12 +117,25 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1.1" data-path="templates/help.html">
+        <li class="chapter " data-level="1.1.1" data-path="help/website.html">
             
-                <a href="templates/help.html">
+                <a href="help/website.html">
             
                     
-                    Help
+                    Website Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="help/markdown.html">
+            
+                <a href="help/markdown.html">
+            
+                    
+                    Markdown Help
             
                 </a>
             
@@ -433,35 +446,16 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="introduction">Introduction</h1>
-<p>Welcome to the <a href="https://mlvqc.github.io/wiki" target="_blank">wiki</a>!</p>
-<h3 id="how-to-edit-a-page">How to edit a page</h3>
-<p>To edit a page, just find it in the <a href="https://github.com/mlvqc/wiki" target="_blank">github repository</a> and edit from there, or pull the repository and edit it on your PC. Then push to master:</p>
-<pre><code class="lang-markdown">git push -u origin master
-</code></pre>
-<p>and the action script should push it to the pages website. Don&apos;t push to the gh-pages repo as this is the backend for rendering the website etc. </p>
-<h3 id="how-to-create-a-new-page">How to create a new page</h3>
-<p>Add the page to the necessary place in the github repository. Then, add it to the <a href="https://github.com/mlvqc/wiki/blob/master/SUMMARY.md" target="_blank">SUMMARY.md</a> file as a member of a nested list in the correct section, and link the page name to the page itself using the following syntax: </p>
-<pre><code class="lang-markdown"><span class="hljs-bullet">* </span>[<span class="hljs-string">section name</span>](<span class="hljs-link">path/to/section.md</span>)
-<span class="hljs-code">    * [page name](path/to/page.md)</span>
-</code></pre>
-<p>The indentation between layers is four spaces. Also, make sure there is a space between the asterisk and the page name, or it won&apos;t work. It is best if we keep the pages saved in a directory with the same name as the section. </p>
-<h3 id="how-to-create-a-new-section">How to create a new section</h3>
-<p>To create a new section, do the same as you would do to add a new page, but when adding it to the <a href="https://github.com/mlvqc/wiki/blob/master/SUMMARY.md" target="_blank">SUMMARY.md</a> file, put it as a top level element in the list: </p>
-<pre><code class="lang-markdown"><span class="hljs-bullet">* </span>[<span class="hljs-string">new section name</span>](<span class="hljs-link">path/to/section.md</span>)
-</code></pre>
-<p>When you&apos;ve created a new section page, also create a new directory in which files relating to that section can be stored. </p>
-<h3 id="how-to-edit-and-preview-locally">How to edit and preview locally</h3>
-<p>To preview the website quickly you can build and host it locally. On Linux this requires you to install <code>gitbook-cli</code> which can be accomplished using the commands</p>
-<pre><code class="lang-bash">sudo apt install npm
-sudo npm install -g gitbook-cli
-</code></pre>
-<p>Assuming the wiki is in the folder <code>./wiki/</code> then you can the plugins listed in <code>./wiki/book.json</code>  using the command </p>
-<pre><code class="lang-bash">gitbook install ./wiki/
-</code></pre>
-<p>Finally, you can start hosting the website locally using the command </p>
-<pre><code class="lang-bash">gitbook serve ./wiki/
-</code></pre>
-<p>With the website hosted locally saved changes cause the website to refresh and thus appear instantly.</p>
+<p>Welcome to the Ares&apos; group <a href="https://mlvqc.github.io/wiki" target="_blank">wiki</a> -  a repository of any and all information pertinent to our research into  semiconducting quantum computers.  </p>
+<p>Contributors (in no particular order) : </p>
+<ul>
+<li>Joseph Hickie </li>
+<li>Natalia Ares</li>
+<li>Brandon Severin </li>
+<li>David Craig</li>
+<li>Barnaby van Straaten</li>
+<li>Sebastian Orbell</li>
+</ul>
 <script type="text/javascript">var className='atoc';</script>
                                 
                                 </section>
@@ -490,7 +484,7 @@ sudo npm install -g gitbook-cli
             
                 
                 
-                <a href="templates/help.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Help">
+                <a href="help/website.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Website Help">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -501,7 +495,7 @@ sudo npm install -g gitbook-cli
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Help","level":"1.1.1","depth":2,"path":"templates/help.md","ref":"templates/help.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","image-captions","github","atoc","hints"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"atoc":{"addClass":true,"className":"atoc"},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"README.md","mtime":"2020-05-28T21:10:34.928Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T21:11:36.941Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"next":{"title":"Website Help","level":"1.1.1","depth":2,"path":"help/website.md","ref":"help/website.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","image-captions","github","atoc","hints"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"atoc":{"addClass":true,"className":"atoc"},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"README.md","mtime":"2020-05-28T21:29:38.140Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T21:30:35.720Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>

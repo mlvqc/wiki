@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Help · GitBook</title>
+        <title>Website Help · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,7 +73,7 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../literature/literature.html" />
+    <link rel="next" href="markdown.html" />
     
     
     <link rel="prev" href="../" />
@@ -119,12 +119,25 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.1.1" data-path="help.html">
+        <li class="chapter active" data-level="1.1.1" data-path="website.html">
             
-                <a href="help.html">
+                <a href="website.html">
             
                     
-                    Help
+                    Website Help
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="markdown.html">
+            
+                <a href="markdown.html">
+            
+                    
+                    Markdown Help
             
                 </a>
             
@@ -419,7 +432,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Help</a>
+        <a href=".." >Website Help</a>
     </h1>
 </div>
 
@@ -434,60 +447,35 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="help">Help</h1>
-<p>This file is designed to help with building markdown files. </p>
-<h3 id="code-blocks">Code blocks</h3>
-<p>You can add code blocks in the following way: </p>
-<pre><code class="lang-`markdown">
-&#x200B;```language
-code goes here
+                                <p>This file is designed to help you contribute to the website</p>
+<h3 id="how-to-edit-a-page">How to edit a page</h3>
+<p>To edit a page, just find it in the <a href="https://github.com/mlvqc/wiki" target="_blank">github repository</a> and edit from there, or pull the repository and edit it on your PC. Then push to master:</p>
+<pre><code class="lang-markdown">git push -u origin master
 </code></pre>
-<p>Where language is the name of the programming language that you are putting in the block. There is support for a lot of languages. Python (python) and bash (sh) are two that we might use often.  </p>
-<p>Python: </p>
-<pre><code class="lang-`python">def sum(a, b): 
-    return a + b
+<p>and the action script should push it to the pages website. Don&apos;t push to the gh-pages repo as this is the backend for rendering the website etc. </p>
+<h3 id="how-to-create-a-new-page">How to create a new page</h3>
+<p>Add the page to the necessary place in the github repository. Then, add it to the <a href="https://github.com/mlvqc/wiki/blob/master/SUMMARY.md" target="_blank">SUMMARY.md</a> file as a member of a nested list in the correct section, and link the page name to the page itself using the following syntax: </p>
+<pre><code class="lang-markdown"><span class="hljs-bullet">* </span>[<span class="hljs-string">section name</span>](<span class="hljs-link">path/to/section.md</span>)
+<span class="hljs-code">    * [page name](path/to/page.md)</span>
 </code></pre>
-<p>Bash:</p>
-<pre><code class="lang-bash">sudo apt update; 
-sudo apt upgrade;
+<p>The indentation between layers is four spaces. Also, make sure there is a space between the asterisk and the page name, or it won&apos;t work. It is best if we keep the pages saved in a directory with the same name as the section. </p>
+<h3 id="how-to-create-a-new-section">How to create a new section</h3>
+<p>To create a new section, do the same as you would do to add a new page, but when adding it to the <a href="https://github.com/mlvqc/wiki/blob/master/SUMMARY.md" target="_blank">SUMMARY.md</a> file, put it as a top level element in the list: </p>
+<pre><code class="lang-markdown"><span class="hljs-bullet">* </span>[<span class="hljs-string">new section name</span>](<span class="hljs-link">path/to/section.md</span>)
 </code></pre>
-<h3 id="table-of-contents">Table of contents</h3>
-<p>You can add a table of contents to a page by including the following in the markdown file: </p>
-<pre><code class="lang-markdown">
-<span class="xml"><span class="hljs-comment">&lt;!-- toc --&gt;</span></span>
-
-<span class="hljs-bullet">* </span>[<span class="hljs-string">Including Images</span>](<span class="hljs-link">#including-images</span>)
-
-<span class="xml"><span class="hljs-comment">&lt;!-- tocstop --&gt;</span></span>
+<p>When you&apos;ve created a new section page, also create a new directory in which files relating to that section can be stored. </p>
+<h3 id="how-to-edit-and-preview-locally">How to edit and preview locally</h3>
+<p>To preview the website quickly you can build and host it locally. On Linux this requires you to install <code>gitbook-cli</code> which can be accomplished using the commands</p>
+<pre><code class="lang-bash">sudo apt install npm
+sudo npm install -g gitbook-cli
 </code></pre>
-<p>The table of contents is then rendered in that position. You do not need the tocstop part, only gitbooks renders that (unsure why). </p>
-<h3 id="equations">Equations</h3>
-<p>The website supports inline or block <code>LaTeX</code> equations. The easiest way to add such equations is through a <code>MathJax</code> compatible markdown writer - Typora for example.</p>
-<p>Example of inline equation: <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>a</mi><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><mi>b</mi><mi>x</mi><mo>+</mo><mi>c</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex"> a x^2 + bx + c = 0 </annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.8141079999999999em;"></span><span class="strut bottom" style="height:0.897438em;vertical-align:-0.08333em;"></span><span class="base textstyle uncramped"><span class="mord mathit">a</span><span class="mord"><span class="mord mathit">x</span><span class="msupsub"><span class="vlist"><span style="top:-0.363em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mbin">+</span><span class="mord mathit">b</span><span class="mord mathit">x</span><span class="mbin">+</span><span class="mord mathit">c</span><span class="mrel">=</span><span class="mord mathrm">0</span></span></span></span></p>
-<p>Example of math-block: 
-<span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msubsup><mo>&#x222B;</mo><mrow><mo>&#x2212;</mo><mi mathvariant="normal">&#x221E;</mi></mrow><mi mathvariant="normal">&#x221E;</mi></msubsup><msup><mi>e</mi><mrow><mo>&#x2212;</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></msup><mi>d</mi><mi>x</mi><mo>=</mo><msqrt><mrow><mi>&#x3C0;</mi></mrow></msqrt></mrow><annotation encoding="application/x-tex">
-\int_{-\infty}^\infty e^{-x^2} dx = \sqrt{\pi}
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:1.36em;"></span><span class="strut bottom" style="height:2.330581em;vertical-align:-0.970581em;"></span><span class="base displaystyle textstyle uncramped"><span class="mop"><span class="mop op-symbol large-op" style="margin-right:0.44445em;top:-0.0011249999999999316em;">&#x222B;</span><span class="msupsub"><span class="vlist"><span style="top:0.91225em;margin-left:-0.44445em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle cramped mtight"><span class="mord scriptstyle cramped mtight"><span class="mord mtight">&#x2212;</span><span class="mord mathrm mtight">&#x221E;</span></span></span></span><span style="top:-0.974em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord mathrm mtight">&#x221E;</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mord"><span class="mord mathit">e</span><span class="msupsub"><span class="vlist"><span style="top:-0.41300000000000003em;margin-right:0.05em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-textstyle scriptstyle uncramped mtight"><span class="mord scriptstyle uncramped mtight"><span class="mord mtight">&#x2212;</span><span class="mord mtight"><span class="mord mathit mtight">x</span><span class="msupsub"><span class="vlist"><span style="top:-0.431em;margin-right:0.07142857142857144em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span><span class="reset-scriptstyle scriptscriptstyle uncramped mtight"><span class="mord mathrm mtight">2</span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:0em;">&#x200B;</span></span>&#x200B;</span></span></span></span><span class="mord mathit">d</span><span class="mord mathit">x</span><span class="mrel">=</span><span class="mord sqrt"><span class="sqrt-sign" style="top:-0.009155000000000024em;"><span class="style-wrap reset-textstyle textstyle uncramped">&#x221A;</span></span><span class="vlist"><span style="top:0em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">&#x200B;</span></span><span class="mord displaystyle textstyle cramped"><span class="mord mathit" style="margin-right:0.03588em;">&#x3C0;</span></span></span><span style="top:-0.769155em;"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">&#x200B;</span></span><span class="reset-textstyle textstyle uncramped sqrt-line"></span></span><span class="baseline-fix"><span class="fontsize-ensurer reset-size5 size5"><span style="font-size:1em;">&#x200B;</span></span>&#x200B;</span></span></span></span></span></span></span></p>
-<h3 id="hint-blocks">Hint blocks</h3>
-<p>You can add hint blocks: </p>
-<pre><code class="lang-markdown">{% hint style=&apos;info&apos; %}
-Important info: this note needs to be highlighted
-{% endhint %}
+<p>Assuming the wiki is in the folder <code>./wiki/</code> then you can the plugins listed in <code>./wiki/book.json</code>  using the command </p>
+<pre><code class="lang-bash">gitbook install ./wiki/
 </code></pre>
-<p>There are four styles: info (default), tip, danger, and warning. Examples are below. </p>
-<p><div class="alert alert-info hints-alert"><div class="hints-icon"><i class="fa fa-info-circle"></i></div><div class="hints-container"><p>This is an info block.</p>
-</div></div></p>
-<p><div class="alert alert-success hints-alert"><div class="hints-icon"><i class="fa fa-mortar-board"></i></div><div class="hints-container"><p>This is a tip block.</p>
-</div></div></p>
-<p><div class="alert alert-danger hints-alert"><div class="hints-icon"><i class="fa fa-exclamation-circle"></i></div><div class="hints-container"><p>This is a danger block. </p>
-</div></div></p>
-<p><div class="alert alert-undefined hints-alert"><div class="hints-icon"><i class="undefined"></i></div><div class="hints-container"><p>This is a warning block.</p>
-</div></div></p>
-<h3 id="including-images">Including Images</h3>
-<p>Images can be added and centred by using the syntax</p>
-<pre><code class="lang-markdown"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">center</span>&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;IMAGE_RELATIVE_PATH&quot;</span> <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;zoom:100%;&quot;</span> /&gt;</span></span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">center</span>&gt;</span></span>
+<p>Finally, you can start hosting the website locally using the command </p>
+<pre><code class="lang-bash">gitbook serve ./wiki/
 </code></pre>
-<p>It is important to use a relative path, as an absolute path would be broken when the image is pushed to github.</p>
+<p>With the website hosted locally saved changes cause the website to refresh and thus appear instantly.</p>
 <script type="text/javascript">var className='atoc';</script>
                                 
                                 </section>
@@ -520,7 +508,7 @@ Important info: this note needs to be highlighted
                 </a>
                 
                 
-                <a href="../literature/literature.html" class="navigation navigation-next " aria-label="Next page: Literature">
+                <a href="markdown.html" class="navigation navigation-next " aria-label="Next page: Markdown Help">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -531,7 +519,7 @@ Important info: this note needs to be highlighted
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Help","level":"1.1.1","depth":2,"next":{"title":"Literature","level":"1.2","depth":1,"path":"literature/literature.md","ref":"literature/literature.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Help","level":"1.1.1","depth":2,"path":"templates/help.md","ref":"templates/help.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","image-captions","github","atoc","hints"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"atoc":{"addClass":true,"className":"atoc"},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"templates/help.md","mtime":"2020-05-28T21:10:34.936Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T21:11:36.941Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Website Help","level":"1.1.1","depth":2,"next":{"title":"Markdown Help","level":"1.1.2","depth":2,"path":"help/markdown.md","ref":"help/markdown.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Website Help","level":"1.1.1","depth":2,"path":"help/website.md","ref":"help/website.md","articles":[]},{"title":"Markdown Help","level":"1.1.2","depth":2,"path":"help/markdown.md","ref":"help/markdown.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["katex","image-captions","github","atoc","hints"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"atoc":{"addClass":true,"className":"atoc"},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"help/website.md","mtime":"2020-05-28T21:29:38.140Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-28T21:30:35.720Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
