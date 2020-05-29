@@ -1,4 +1,4 @@
-# Notes on Quantum Dots
+# Notes on quantum dot papers
 
 <!-- toc -->
 
