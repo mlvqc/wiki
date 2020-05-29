@@ -1,4 +1,4 @@
-This file is designed to help you contribute to the website
+This file is designed to help you contribute to the website. 
 
 ### How to edit a page
 
