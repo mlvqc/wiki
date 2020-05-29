@@ -1,5 +1,5 @@
-This file is designed to help you contribute to the website. 
-
+This file is designed to help you contribute to the website.
+=======
 ### How to edit a page
 
 To edit a page, just find it in the [github repository](https://github.com/mlvqc/wiki) and edit from there, or pull the repository and edit it on your PC. Then push to master:
