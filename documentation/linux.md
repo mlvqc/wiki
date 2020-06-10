@@ -2,6 +2,30 @@
 
 <!-- toc -->
 
+### Tensorflow
+
+The tensorflow that you pip install if you ohhh so diligently follow the instructions on [tensorflow](https://www.tensorflow.org/install) is designed to work with any CPU. As a result it misses many optimisations available to you specific CPU. These optimisation can speed your code up by a factor of $$\times 3.$$ To this end our CPU manufacturer, intel, has created a both a python and tensorflow build with these optimisations of each of its CPUs. 
+
+To setup a conda environment with the intel version of python use
+
+```bash
+conda create -n <name> -c intel intelpython3_full
+```
+
+ Then we install tensorflow via
+
+```bash
+pip install intel-tensorflow
+```
+
+To setup Jupyter notebooks use 
+
+```bash
+conda install jupyter -c intel
+```
+
+[Source](https://towardsdatascience.com/optimize-your-cpu-for-deep-learning-424a199d7a87)
+
 ### Bash Aliases, Functions and  FIGNORE
 
 Bash aliases make using the command line a more fluid experience by allowing you to execute a long command by typing a short alias. For example suppose that you are particularly lazy and  hate the having to `stage .`, `commit` and `push` changes across three commands then it is possible to define a single command to do all three at once, `git-lazy`. 
