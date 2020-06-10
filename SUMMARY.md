@@ -13,6 +13,7 @@
       * [Zurich](documentation/drivers/zurich.md)
 * [Readout](readout/readout.md)
 * [Machine learning](ml/ml.md)
+    * [Probabilistic Programming and Bayesian Methods for Hackers](ml/prob.md)
 * [Papers](papers/papers.md)
     * [Reflectometry](papers/rf-papers.md)
     * [Qubits](papers/qubit-papers.md)
