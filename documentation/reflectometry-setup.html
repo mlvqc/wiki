@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Intuitions · GitBook</title>
+        <title>RF setup · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -73,10 +73,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../qanda/qanda.html" />
+    <link rel="next" href="../readout/readout.html" />
     
     
-    <link rel="prev" href="../ideas/ideas.html" />
+    <link rel="prev" href="latex.html" />
     
 
     </head>
@@ -163,9 +163,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../documentation/documentation.html">
+        <li class="chapter " data-level="1.3" data-path="documentation.html">
             
-                <a href="../documentation/documentation.html">
+                <a href="documentation.html">
             
                     
                     Documentation
@@ -177,9 +177,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../documentation/git.html">
+        <li class="chapter " data-level="1.3.1" data-path="git.html">
             
-                <a href="../documentation/git.html">
+                <a href="git.html">
             
                     
                     Git
@@ -190,9 +190,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../documentation/visa.html">
+        <li class="chapter " data-level="1.3.2" data-path="visa.html">
             
-                <a href="../documentation/visa.html">
+                <a href="visa.html">
             
                     
                     Setting up VISA on Ubuntu
@@ -203,9 +203,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../documentation/sample-test.html">
+        <li class="chapter " data-level="1.3.3" data-path="sample-test.html">
             
-                <a href="../documentation/sample-test.html">
+                <a href="sample-test.html">
             
                     
                     Room temperature sample test
@@ -216,9 +216,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.4" data-path="../documentation/linux.html">
+        <li class="chapter " data-level="1.3.4" data-path="linux.html">
             
-                <a href="../documentation/linux.html">
+                <a href="linux.html">
             
                     
                     Linux
@@ -229,9 +229,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.5" data-path="../documentation/drivers.html">
+        <li class="chapter " data-level="1.3.5" data-path="drivers.html">
             
-                <a href="../documentation/drivers.html">
+                <a href="drivers.html">
             
                     
                     Drivers
@@ -243,9 +243,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.5.1" data-path="../documentation/drivers/zurich.html">
+        <li class="chapter " data-level="1.3.5.1" data-path="drivers/zurich.html">
             
-                <a href="../documentation/drivers/zurich.html">
+                <a href="drivers/zurich.html">
             
                     
                     Zurich
@@ -261,9 +261,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.6" data-path="../documentation/latex.html">
+        <li class="chapter " data-level="1.3.6" data-path="latex.html">
             
-                <a href="../documentation/latex.html">
+                <a href="latex.html">
             
                     
                     Latex
@@ -274,9 +274,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.7" data-path="../documentation/reflectometry-setup.html">
+        <li class="chapter active" data-level="1.3.7" data-path="reflectometry-setup.html">
             
-                <a href="../documentation/reflectometry-setup.html">
+                <a href="reflectometry-setup.html">
             
                     
                     RF setup
@@ -421,9 +421,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.8" data-path="intuitions.html">
+        <li class="chapter " data-level="1.8" data-path="../intuitions/intuitions.html">
             
-                <a href="intuitions.html">
+                <a href="../intuitions/intuitions.html">
             
                     
                     Intuitions
@@ -477,7 +477,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Intuitions</a>
+        <a href=".." >RF setup</a>
     </h1>
 </div>
 
@@ -492,7 +492,70 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <script type="text/javascript">var className='atoc';</script>
+                                <p>SETTING UP REFLECTOMETRY: A COMPLETE USER GUIDE                         2019-12-12</p>
+<hr>
+<p>JDH 
+BS 
+NvE</p>
+<hr>
+<h2 id="1--preamble">1 | Preamble</h2>
+<p>The device is already loaded and the fridge is already cold. If you find yourself disagreeing with either of these statements, look for a different document. </p>
+<p>Fridge wires are plugged in and ungrounded. Follow the bonding scheme and fridge diagram for help with this.   </p>
+<h2 id="2--loading-igor-7-pro">2 | Loading IGOR 7 PRO</h2>
+<pre><code>a) Initialise the following procedures: 
+    1) OxDataInit() # Opens the window for selecting channels and sets up a lot of stuff. 
+    2) InitDAC() # opens the DACtable and initialises the DACs. 
+    3) setval(&quot;call&quot;, 0) # Sets all the DAC values to 0. 
+    4) initscaleATS() # Initialises the Alazar card.
+    5) InitFlorianGUI() # Opens windows that facilitates easy sweeps. 
+    6) VISAinit() # Initialises the VISA device management to allow connection over GPIB.
+    7) EXAinit() # Driver for the EXA device (Agilent Tech. signal analyser).
+
+b) Set gainSQUID as channel 1 measurement.  
+</code></pre><h2 id="3--set-up-apparatus-for-tuning-squid">3 | Set up apparatus for tuning squid.</h2>
+<pre><code>a) The maximum power into the fridge is approximately -20 dBm. Make sure that, between the power sent in by the signal generator/lock-in and any in-series attenuators, you are not exceeding this value at the fridge. 
+
+b) The frequency at which the SQUID is tuned is selected based on the frequency of the device cavity. This is seen as a large dip on the spectrum analyser when the reflected power from the device is measured. 
+
+c) The frequency of this dip can be altered with a functioning varactor. If the varactor is not working then the frequency is not variable. 
+
+d) Plug A6 into the frequency generator and RX into the RF input on the signal analyser. To use the room temperature amplifier, plug RX cable into &apos;Rx&apos; on the demodulation box and then run a wire from &apos;Sig Mon&apos; (on the demodulation box) to the input of the signal anaylser. [See fridge diagram for clarity].
+
+e) Ensure cryoamp is on. To turn it on, turn the dial on the cryoamp power box (labelled TRITON 1 LAVYPOWER 2) [nomenclature unclear] to 5. This is the maximum. Turn the dial ANTICLOCKWISE to increase the power. 
+
+f) Bandwidth on EXA should be very low - in the few Hz range (3-10 Hz e.g.). Span on EXA should be in the low kHz - e.g. 1 kHz. 
+
+g) Make sure IGOR delay is longer than the time taken to make a new trace. This is related to the span and the bandwidth. 
+</code></pre><h2 id="4--tune-squid">4 | Tune SQUID</h2>
+<pre><code>a) Initially, tune the CURRENT BIAS. The limits of the current bias are -10 mV &lt; I_bias &lt; 10 mV. Sweep 0 mV to 10 mV and you should observe the SQUID turning on. It will be clear when this happens because the gainSQUID value should increase quite dramatically. It will then fluctuate but remain higher than before it turned on. 
+
+b) Look for a point on the current bias measurement where the gainSQUID value is high. Do not have it too close to the turn off point - it is better to have a slightly lower but more stable gainSQUID value at this stage. 
+
+c) Now tune the FLUX BIAS. Slowly sweep over the operating range 0 mV to 10 mV to identify areas with good gainSQUID. The full operating range of the flux bias is -10 mV &lt; I_flux &lt; 10 mV. Move very slowly back to the flux bias value that gives good gain. Continue to do this until you are satisfied with the gain. 
+
+d) Check the gainSQUID stability by doing a sweep over time and seeing if it stays at a satisfactory level. If it does not, there might be some problems with the SQUID. For instance, there might be a fluctuating magnetic field nearby that is affecting it. 
+
+e) Lock the DAC channels connected to the flux and current biases by setting the &apos;Lock&apos; parameter to 1 (from 0) on the IGOR DAC table. 
+</code></pre><h2 id="5--switch-to-device">5 | Switch to device</h2>
+<pre><code>a) Check fridge diagram to be sure of the wiring - there is a chance that it has changed since this guide was written. We now link the Zurich Instruments lock-in to the device rather than the frequency generator and signal analyser that we use to tune the SQUID. 
+
+b) Rx goes into the &apos;Rx&apos; in the demodulation box. The output of the demodulation box, &apos;Sig Mon&apos;, goes into the Zurich input. Tx from the breakout board goes into the Zurich output. 
+
+c) Get the double dot by setting the correct voltage values for the various gates. 
+</code></pre><h2 id="6--setup-zurich-instruments-lock-in">6 | Setup ZURICH Instruments Lock-In</h2>
+<pre><code>a) Open the Zurich Instruments control software, &quot;LabOne&quot;. Select &apos;Lock-in&apos; and device number 4 on the size panel within the lock-in section. (The different selections allow you to run the lock-in in different software modes.)
+
+b) Oscillator goes to the correct frequency - the one that the SQUID has been tuned at and which should be in the device cavity. 
+
+c) Check the Aux output is set to the same channel that the actual device is sending to the computer. There are four channels on the front of the device - the number above the one which is directly connected to the computer is the number that should be selected here. Set the signal to demod X. Click preoffset so that the measured voltage fluctuates around ~0 V. 
+</code></pre><h2 id="7--readout">7 | Readout</h2>
+<pre><code>a) Back on IGOR. Read out I on channel 1 and VATS (voltage at the source) on channel 2. This will give both the current map and the RF map. 
+</code></pre><h2 id="troubleshooting-">TROUBLESHOOTING </h2>
+<p>ISSUE: topclock(): max reached! You need to empty the root:util:wait: folder. 
+SOLUTION: Delete the contents of the ./util/wait folder. Do this by entering the data browser in IGOR (Ctrl-B) and navigating to ./util/wait. Delete the contents of it - there should be 100. This is currently the maximum number before we get this warning. </p>
+<p>ISSUE: Flatline on VATS (channel 2) when making measurements after stage 7. 
+SOLUTION 1: The Alazar card is saturated. Preoffset and rerun the measurement.</p>
+<script type="text/javascript">var className='atoc';</script>
                                 
                                 </section>
                             
@@ -519,12 +582,12 @@
 
             
                 
-                <a href="../ideas/ideas.html" class="navigation navigation-prev " aria-label="Previous page: Ideas">
+                <a href="latex.html" class="navigation navigation-prev " aria-label="Previous page: Latex">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../qanda/qanda.html" class="navigation navigation-next " aria-label="Next page: Q&A">
+                <a href="../readout/readout.html" class="navigation navigation-next " aria-label="Next page: Readout">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -535,7 +598,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Intuitions","level":"1.8","depth":1,"next":{"title":"Q&A","level":"1.9","depth":1,"path":"qanda/qanda.md","ref":"qanda/qanda.md","articles":[]},"previous":{"title":"Ideas","level":"1.7","depth":1,"path":"ideas/ideas.md","ref":"ideas/ideas.md","articles":[]},"dir":"neutral"},"config":{"plugins":["katex","image-captions","github","atoc","hints"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"atoc":{"addClass":true,"className":"atoc"},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"intuitions/intuitions.md","mtime":"2020-05-28T11:42:51.315Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-16T10:17:19.324Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"RF setup","level":"1.3.7","depth":2,"next":{"title":"Readout","level":"1.4","depth":1,"path":"readout/readout.md","ref":"readout/readout.md","articles":[]},"previous":{"title":"Latex","level":"1.3.6","depth":2,"path":"documentation/latex.md","ref":"documentation/latex.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","image-captions","github","atoc","hints"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"atoc":{"addClass":true,"className":"atoc"},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"documentation/reflectometry-setup.md","mtime":"2020-06-16T09:37:28.331Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-16T10:17:19.324Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
