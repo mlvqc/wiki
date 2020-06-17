@@ -11,6 +11,8 @@
     * [Linux](documentation/linux.md)
     * [Drivers](documentation/drivers.md)
       * [Zurich](documentation/drivers/zurich.md)
+    * [Latex](documentation/latex.md)
+    * [RF setup](documentation/reflectometry-setup.md) 
 * [Readout](readout/readout.md)
 * [Machine learning](ml/ml.md)
     * [Probabilistic Programming and Bayesian Methods for Hackers](ml/prob.md)

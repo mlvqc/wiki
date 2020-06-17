@@ -1,13 +1,9 @@
 {
-    "plugins": ["katex", "image-captions", "github", "atoc", "hints"], 
+    "plugins": ["katex", "image-captions", "github", "intopic-toc", "hints"], 
     "description": "MLvQC wiki", 
     "pluginsConfig": {
         "github": {
             "url": "https://github.com/mlvqc/wiki"
-        }, 
-        "atoc": {
-            "addClass": true,
-            "className": "atoc"
         }
     }
 }
