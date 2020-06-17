@@ -25,7 +25,7 @@
                 
             
                 
-                <link rel="stylesheet" href="../gitbook/gitbook-plugin-atoc/atoc.css">
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-intopic-toc/style.css">
                 
             
                 
@@ -493,16 +493,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="notes-on-fabricationarchitecture-papers">Notes on fabrication/architecture papers</h1>
-<!-- toc -->
-<ul>
-<li><a href="#cmos-architecture-for-a-spin-based-quantum-computer---veldhorsthttpswwwnaturecomarticless41467-017-01905-6pdf"><a href="https://www.nature.com/articles/s41467-017-01905-6.pdf" target="_blank">CMOS architecture for a spin-based quantum computer - Veldhorst</a></a><ul>
-<li><a href="#physical-architecture">Physical Architecture</a></li>
-<li><a href="#readout">Readout</a></li>
-<li><a href="#heat-dissipation">Heat Dissipation</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
+ <!-- toc -->
 <h3 id="cmos-architecture-for-a-spin-based-quantum-computer---veldhorst"><a href="https://www.nature.com/articles/s41467-017-01905-6.pdf" target="_blank">CMOS architecture for a spin-based quantum computer - Veldhorst</a></h3>
 <p>A paper discussing the how a CMOS architecture for spin-<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">1/2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.75em;"></span><span class="strut bottom" style="height:1em;vertical-align:-0.25em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mord mathrm">/</span><span class="mord mathrm">2</span></span></span></span> qubits might be scaled.  Single qubit gates are implemented using microwave cavity, two qubit gates via exchange interactions and read out by gate based dispersive readout. They suggest how transistor based control circuit with charge storage electrodes could be used to operate a dense and scalable two dimensional qubit system. </p>
 <p>In classical computing Silicon based CMOS integrated circuits (ICs) have scaled to billions of transistors. A key architectural aspect of IC is the parallel addressing through word line and bit line, facilitating  rapid read and write operations on large 2D arrays of bits. Unfortunately, this cannot be applied directly to qubit arrays. As the tolerance levels are small so each qubit must be individually tunable. </p>
@@ -527,7 +518,7 @@
 <h5 id="heat-dissipation">Heat Dissipation</h5>
 <p>Of critical importance to large scale quantum computing is heat dissipation/cooling power. They estimate the heat produced by the control electronics and how much heat a cryostat could remove and conclude an operating temperature of <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mn>0</mn><mn>0</mn></mrow><annotation encoding="application/x-tex">100</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.64444em;vertical-align:0em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mord mathrm">0</span><span class="mord mathrm">0</span></span></span></span>mK. </p>
 <p>[Barnaby]</p>
-<script type="text/javascript">var className='atoc';</script>
+
                                 
                                 </section>
                             
@@ -570,7 +561,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Fab/architecture","level":"1.6.4","depth":2,"next":{"title":"Ideas","level":"1.7","depth":1,"path":"ideas/ideas.md","ref":"ideas/ideas.md","articles":[]},"previous":{"title":"Quantum dots","level":"1.6.3","depth":2,"path":"papers/dot-papers.md","ref":"papers/dot-papers.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","image-captions","github","atoc","hints"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"atoc":{"addClass":true,"className":"atoc"},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"papers/fab-papers.md","mtime":"2020-06-16T09:37:06.367Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-16T10:17:19.324Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Fab/architecture","level":"1.6.4","depth":2,"next":{"title":"Ideas","level":"1.7","depth":1,"path":"ideas/ideas.md","ref":"ideas/ideas.md","articles":[]},"previous":{"title":"Quantum dots","level":"1.6.3","depth":2,"path":"papers/dot-papers.md","ref":"papers/dot-papers.md","articles":[]},"dir":"ltr"},"config":{"plugins":["katex","image-captions","github","intopic-toc","hints","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/mlvqc/wiki"},"intopic-toc":{"isCollapsed":true,"isScrollspyActive":true,"label":"In this article","maxDepth":6,"mode":"nested","selector":".markdown-section h1, .markdown-section h2, .markdown-section h3, .markdown-section h4, .markdown-section h5, .markdown-section h6","visible":true},"livereload":{},"search":{},"hints":{"danger":"fa fa-exclamation-circle","info":"fa fa-info-circle","tip":"fa fa-mortar-board","working":"fa fa-wrench"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"_pictures":[{"backlink":"ml/prob.html#fig1.5.1.1","level":"1.5.1","list_caption":"Figure: Logistic","alt":"Logistic","nro":1,"url":"./images/one.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Logistic","attributes":{},"skip":false,"key":"1.5.1.1"},{"backlink":"ml/prob.html#fig1.5.1.2","level":"1.5.1","list_caption":"Figure: Logistic","alt":"Logistic","nro":2,"url":"./images/two.png","index":2,"caption_template":"Figure: _CAPTION_","label":"Logistic","attributes":{},"skip":false,"key":"1.5.1.2"}]},"gitbook":"*","description":"MLvQC wiki"},"file":{"path":"papers/fab-papers.md","mtime":"2020-06-16T09:37:06.367Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-17T10:07:40.090Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
@@ -584,7 +575,19 @@
         
     
         
-        <script src="../gitbook/gitbook-plugin-atoc/atoc.js"></script>
+        <script src="../gitbook/gitbook-plugin-intopic-toc/anchor.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/gumshoe.polyfills.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-intopic-toc/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
