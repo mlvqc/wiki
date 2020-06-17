@@ -17,6 +17,7 @@
 | add all files in directory to commit                         | `git add .`                                                  |
 | commit files `add`ed to the current branch with sign-off `-s` and message `-m` | `git commit -s -m "<add informative message about edits and committed files>"` |
 | push commits and changes to new branch                       | `git push -u origin <branch currently editing name>`         |
+| clone single and specific git branch                         | `git clone --single-branch --branch <branch> <repo>`         |  
 
 
 
